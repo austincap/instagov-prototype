@@ -28,7 +28,6 @@ H:\Github\instagov-prototype\bin\Debug\ZstdSharp.dll
 H:\Github\instagov-prototype\obj\Debug\instagov-prototype.csproj.AssemblyReference.cache
 H:\Github\instagov-prototype\obj\Debug\instagov-prototype.csproj.SuggestedBindingRedirects.cache
 H:\Github\instagov-prototype\obj\Debug\instagov-prototype.exe.config
-H:\Github\instagov-prototype\obj\Debug\instagov_prototype.Form1.resources
 H:\Github\instagov-prototype\obj\Debug\instagov_prototype.Properties.Resources.resources
 H:\Github\instagov-prototype\obj\Debug\instagov-prototype.csproj.GenerateResource.cache
 H:\Github\instagov-prototype\obj\Debug\instagov-prototype.csproj.CoreCompileInputs.cache
@@ -38,3 +37,5 @@ H:\Github\instagov-prototype\obj\Debug\instagov-prototype.pdb
 H:\Github\instagov-prototype\bin\Debug\Newtonsoft.Json.dll
 H:\Github\instagov-prototype\bin\Debug\Newtonsoft.Json.Bson.dll
 H:\Github\instagov-prototype\bin\Debug\Newtonsoft.Json.Bson.pdb
+H:\Github\instagov-prototype\bin\Debug\SequentialGuid.dll
+H:\Github\instagov-prototype\obj\Debug\instagov_prototype.Form1.resources

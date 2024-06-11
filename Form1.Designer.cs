@@ -33,7 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.billComboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -45,10 +45,16 @@
             this.label7 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.status = new System.Windows.Forms.Label();
+            this.citizenComboBox = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
+            this.definitionComboBox = new System.Windows.Forms.ComboBox();
+            this.assetComboBox = new System.Windows.Forms.ComboBox();
+            this.disputeComboBox = new System.Windows.Forms.ComboBox();
+            this.organizationComboBox = new System.Windows.Forms.ComboBox();
+            this.contractComboBox = new System.Windows.Forms.ComboBox();
+            this.subtypeMetaSelector = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,8 +72,8 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "CREATE",
-            "MODIFY",
+            "MAKE",
+            "CHANGE",
             "VOTE",
             "CANCEL"});
             this.comboBox1.Location = new System.Drawing.Point(303, 168);
@@ -99,6 +105,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 4;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -109,27 +116,29 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "legal action";
             // 
-            // comboBox3
+            // billComboBox
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "MAY DO",
-            "SHALL NOT DO",
-            "MUST DO",
-            "HAS RIGHT TO"});
-            this.comboBox3.Location = new System.Drawing.Point(303, 254);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 6;
+            this.billComboBox.FormattingEnabled = true;
+            this.billComboBox.Items.AddRange(new object[] {
+            "MAY",
+            "MUST",
+            "MUSTNOT",
+            "ADMINISTRATIVE"});
+            this.billComboBox.Location = new System.Drawing.Point(303, 254);
+            this.billComboBox.Name = "billComboBox";
+            this.billComboBox.Size = new System.Drawing.Size(121, 21);
+            this.billComboBox.TabIndex = 6;
+            this.billComboBox.Visible = false;
+            this.billComboBox.SelectedIndexChanged += new System.EventHandler(this.billComboBox_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(303, 235);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 13);
+            this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 7;
-            this.label3.Text = "object subtype";
+            this.label3.Text = "legal type";
             // 
             // richTextBox1
             // 
@@ -148,7 +157,7 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(303, 297);
+            this.numericUpDown1.Location = new System.Drawing.Point(155, 308);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown1.TabIndex = 9;
@@ -156,7 +165,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(303, 278);
+            this.label4.Location = new System.Drawing.Point(155, 289);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 13);
             this.label4.TabIndex = 10;
@@ -212,28 +221,29 @@
             this.label8.TabIndex = 16;
             this.label8.Text = "target ID";
             // 
-            // label9
+            // status
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(471, 371);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 13);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "status";
+            this.status.AutoSize = true;
+            this.status.Location = new System.Drawing.Point(471, 371);
+            this.status.Name = "status";
+            this.status.Size = new System.Drawing.Size(35, 13);
+            this.status.TabIndex = 18;
+            this.status.Text = "status";
             // 
-            // comboBox4
+            // citizenComboBox
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.citizenComboBox.FormattingEnabled = true;
+            this.citizenComboBox.Items.AddRange(new object[] {
             "CITIZEN",
             "PRISONER",
             "POLICE",
             "OFFICIAL"});
-            this.comboBox4.Location = new System.Drawing.Point(298, 252);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
-            this.comboBox4.TabIndex = 19;
-            this.comboBox4.Visible = false;
+            this.citizenComboBox.Location = new System.Drawing.Point(289, 262);
+            this.citizenComboBox.Name = "citizenComboBox";
+            this.citizenComboBox.Size = new System.Drawing.Size(121, 21);
+            this.citizenComboBox.TabIndex = 19;
+            this.citizenComboBox.Visible = false;
+            this.citizenComboBox.SelectedIndexChanged += new System.EventHandler(this.citizenComboBox_SelectedIndexChanged);
             // 
             // dateTimePicker1
             // 
@@ -253,15 +263,103 @@
             this.label10.TabIndex = 21;
             this.label10.Text = "vote by";
             // 
+            // definitionComboBox
+            // 
+            this.definitionComboBox.FormattingEnabled = true;
+            this.definitionComboBox.Items.AddRange(new object[] {
+            "VERB",
+            "NOUN",
+            "DESCRIPTOR",
+            "SPECIFIER"});
+            this.definitionComboBox.Location = new System.Drawing.Point(303, 270);
+            this.definitionComboBox.Name = "definitionComboBox";
+            this.definitionComboBox.Size = new System.Drawing.Size(121, 21);
+            this.definitionComboBox.TabIndex = 22;
+            this.definitionComboBox.Visible = false;
+            this.definitionComboBox.SelectedIndexChanged += new System.EventHandler(this.definitionComboBox_SelectedIndexChanged);
+            // 
+            // assetComboBox
+            // 
+            this.assetComboBox.FormattingEnabled = true;
+            this.assetComboBox.Items.AddRange(new object[] {
+            "PERSONAL",
+            "COMMUNAL",
+            "LICENSE"});
+            this.assetComboBox.Location = new System.Drawing.Point(289, 280);
+            this.assetComboBox.Name = "assetComboBox";
+            this.assetComboBox.Size = new System.Drawing.Size(121, 21);
+            this.assetComboBox.TabIndex = 23;
+            this.assetComboBox.Visible = false;
+            // 
+            // disputeComboBox
+            // 
+            this.disputeComboBox.FormattingEnabled = true;
+            this.disputeComboBox.Items.AddRange(new object[] {
+            "CIVIL",
+            "CRIMINAL",
+            "CONTRACT"});
+            this.disputeComboBox.Location = new System.Drawing.Point(303, 289);
+            this.disputeComboBox.Name = "disputeComboBox";
+            this.disputeComboBox.Size = new System.Drawing.Size(121, 21);
+            this.disputeComboBox.TabIndex = 24;
+            this.disputeComboBox.Visible = false;
+            this.disputeComboBox.SelectedIndexChanged += new System.EventHandler(this.disputeComboBox_SelectedIndexChanged);
+            // 
+            // organizationComboBox
+            // 
+            this.organizationComboBox.FormattingEnabled = true;
+            this.organizationComboBox.Items.AddRange(new object[] {
+            "GOVERNMENT",
+            "SOLEOWNER",
+            "CORPORATION",
+            "NONPROFIT"});
+            this.organizationComboBox.Location = new System.Drawing.Point(303, 308);
+            this.organizationComboBox.Name = "organizationComboBox";
+            this.organizationComboBox.Size = new System.Drawing.Size(121, 21);
+            this.organizationComboBox.TabIndex = 25;
+            this.organizationComboBox.Visible = false;
+            this.organizationComboBox.SelectedIndexChanged += new System.EventHandler(this.organizationComboBox_SelectedIndexChanged);
+            // 
+            // contractComboBox
+            // 
+            this.contractComboBox.FormattingEnabled = true;
+            this.contractComboBox.Items.AddRange(new object[] {
+            "CIVIL",
+            "LABOR",
+            "LOANS",
+            "SALES",
+            "ALETORY"});
+            this.contractComboBox.Location = new System.Drawing.Point(289, 297);
+            this.contractComboBox.Name = "contractComboBox";
+            this.contractComboBox.Size = new System.Drawing.Size(121, 21);
+            this.contractComboBox.TabIndex = 26;
+            this.contractComboBox.Visible = false;
+            this.contractComboBox.SelectedIndexChanged += new System.EventHandler(this.contractComboBox_SelectedIndexChanged);
+            // 
+            // subtypeMetaSelector
+            // 
+            this.subtypeMetaSelector.AutoSize = true;
+            this.subtypeMetaSelector.Location = new System.Drawing.Point(303, 335);
+            this.subtypeMetaSelector.Name = "subtypeMetaSelector";
+            this.subtypeMetaSelector.Size = new System.Drawing.Size(0, 13);
+            this.subtypeMetaSelector.TabIndex = 27;
+            this.subtypeMetaSelector.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.subtypeMetaSelector);
+            this.Controls.Add(this.contractComboBox);
+            this.Controls.Add(this.organizationComboBox);
+            this.Controls.Add(this.disputeComboBox);
+            this.Controls.Add(this.assetComboBox);
+            this.Controls.Add(this.definitionComboBox);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.citizenComboBox);
+            this.Controls.Add(this.status);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label7);
@@ -272,7 +370,7 @@
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.billComboBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label1);
@@ -294,7 +392,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox billComboBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.TextBox textBox1;
@@ -306,10 +404,16 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label status;
+        private System.Windows.Forms.ComboBox citizenComboBox;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox definitionComboBox;
+        private System.Windows.Forms.ComboBox assetComboBox;
+        private System.Windows.Forms.ComboBox disputeComboBox;
+        private System.Windows.Forms.ComboBox organizationComboBox;
+        private System.Windows.Forms.ComboBox contractComboBox;
+        private System.Windows.Forms.Label subtypeMetaSelector;
     }
 }
 

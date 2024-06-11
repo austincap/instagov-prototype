@@ -59,6 +59,10 @@
             "Newtonsoft.Json.Bson": {
               "target": "Package",
               "version": "[1.0.2, )"
+            },
+            "SequentialGuid": {
+              "target": "Package",
+              "version": "[4.0.5, )"
             }
           }
         }

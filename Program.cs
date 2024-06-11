@@ -53,6 +53,7 @@ namespace instagov_prototype
         [STAThread]
         static void Main()
         {
+  
             //Environment.SetEnvironmentVariable("MONGODB_URI", "mongodb+srv://austin:fucksluts@instagov.uludw0r.mongodb.net/");
             //var connectionString = Environment.GetEnvironmentVariable("MONGODB_URI");
             //if (connectionString == null)

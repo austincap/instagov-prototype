@@ -250,6 +250,19 @@
           }
         }
       },
+      "SequentialGuid/4.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net462/SequentialGuid.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/SequentialGuid.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "dependencies": {
@@ -861,6 +874,19 @@
           }
         }
       },
+      "SequentialGuid/4.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net462/SequentialGuid.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/SequentialGuid.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "dependencies": {
@@ -1394,6 +1420,19 @@
         "runtime": {
           "lib/net45/Newtonsoft.Json.Bson.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SequentialGuid/4.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net462/SequentialGuid.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/SequentialGuid.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -1933,6 +1972,19 @@
           }
         }
       },
+      "SequentialGuid/4.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net462/SequentialGuid.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/SequentialGuid.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "dependencies": {
@@ -2466,6 +2518,19 @@
         "runtime": {
           "lib/net45/Newtonsoft.Json.Bson.dll": {
             "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SequentialGuid/4.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net462/SequentialGuid.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/SequentialGuid.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -3067,6 +3132,31 @@
         "lib/netstandard2.0/Newtonsoft.Json.Bson.xml",
         "newtonsoft.json.bson.1.0.2.nupkg.sha512",
         "newtonsoft.json.bson.nuspec"
+      ]
+    },
+    "SequentialGuid/4.0.5": {
+      "sha512": "4kk79z7AwOew/NzCUHXRj37zt7B8PSKF15e3avsANDrzOUWe8ahzbSu5tr46nZbiQD2pXI4L0NosHKdG5forIw==",
+      "type": "package",
+      "path": "sequentialguid/4.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net462/SequentialGuid.dll",
+        "lib/net462/SequentialGuid.xml",
+        "lib/net6.0/SequentialGuid.dll",
+        "lib/net6.0/SequentialGuid.xml",
+        "lib/net7.0/SequentialGuid.dll",
+        "lib/net7.0/SequentialGuid.xml",
+        "lib/net8.0/SequentialGuid.dll",
+        "lib/net8.0/SequentialGuid.xml",
+        "lib/netstandard2.0/SequentialGuid.dll",
+        "lib/netstandard2.0/SequentialGuid.xml",
+        "lib/netstandard2.1/SequentialGuid.dll",
+        "lib/netstandard2.1/SequentialGuid.xml",
+        "sequentialguid.4.0.5.nupkg.sha512",
+        "sequentialguid.nuspec"
       ]
     },
     "SharpCompress/0.30.1": {
@@ -3859,7 +3949,8 @@
       "MongoDB.Bson >= 2.25.0",
       "MongoDB.Driver >= 2.25.0",
       "Newtonsoft.Json >= 13.0.3",
-      "Newtonsoft.Json.Bson >= 1.0.2"
+      "Newtonsoft.Json.Bson >= 1.0.2",
+      "SequentialGuid >= 4.0.5"
     ]
   },
   "packageFolders": {
@@ -3921,6 +4012,10 @@
           "Newtonsoft.Json.Bson": {
             "target": "Package",
             "version": "[1.0.2, )"
+          },
+          "SequentialGuid": {
+            "target": "Package",
+            "version": "[4.0.5, )"
           }
         }
       }
