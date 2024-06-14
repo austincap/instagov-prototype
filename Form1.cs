@@ -13,13 +13,16 @@ using System.Windows.Forms;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Bson;
 using SequentialGuid;
+using System.Diagnostics;
 
 
 namespace instagov_prototype
 {
-
+    
     public partial class Form1 : Form
     {
+        private Form2 availableBills = new Form2();
+        private Form3 passedBills = new Form3();
         public Form1()
         {
             InitializeComponent();
@@ -30,10 +33,20 @@ namespace instagov_prototype
             var validObjId_orig = this.textBox2.Text;
             var validObjId_targ = this.textBox3.Text;
 
-
-            if (ObjectId.TryParse(validObjId_orig, out _) && ObjectId.TryParse(validObjId_targ, out _))
+            Debug.WriteLine(validObjId_targ);
+            //if targetID is not used
+            if (validObjId_targ != "")
             {
-                this.status.Text = "Valid IDs";
+                if (ObjectId.TryParse(validObjId_orig, out _) && ObjectId.TryParse(validObjId_targ, out _))
+                {
+
+                    this.status.Text = "Valid IDs";
+                }
+                else
+                {
+                    this.status.Text = "Invalid IDs";
+                }
+
                 try
                 {
                     //string text = System.IO.File.ReadAllText(@"records.JSON");
@@ -60,10 +73,6 @@ namespace instagov_prototype
                     this.status.Text = "Transaction failed";
                 }
             }
-            else
-            {
-                this.status.Text = "Invalid IDs";            }
-        
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -130,6 +139,28 @@ namespace instagov_prototype
         private void contractComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.subtypeMetaSelector.Text = this.contractComboBox.SelectedItem.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //Form2 f2 = new Form2();
+            availableBills.ShowDialog(); // Shows Form2
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            passedBills.ShowDialog();
+        }
+
+        private void genesisBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (genesisBox.Checked)
+            {
+                genesisChainName.Visible = true;
+                genesisInputLabel.Visible = true;
+                genesisThresholdLabel.Visible = true;
+                genesisThresholdValue.Visible = true;
+            }
         }
     }
 

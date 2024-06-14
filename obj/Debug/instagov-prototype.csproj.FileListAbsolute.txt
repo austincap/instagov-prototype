@@ -39,3 +39,5 @@ H:\Github\instagov-prototype\bin\Debug\Newtonsoft.Json.Bson.dll
 H:\Github\instagov-prototype\bin\Debug\Newtonsoft.Json.Bson.pdb
 H:\Github\instagov-prototype\bin\Debug\SequentialGuid.dll
 H:\Github\instagov-prototype\obj\Debug\instagov_prototype.Form1.resources
+H:\Github\instagov-prototype\obj\Debug\instagov_prototype.Form2.resources
+H:\Github\instagov-prototype\obj\Debug\instagov_prototype.Form3.resources

@@ -3,7 +3,19 @@
   "WorkspaceRootPath": "H:\\Github\\instagov-prototype\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|h:\\github\\instagov-prototype\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|h:\\github\\instagov-prototype\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|H:\\Github\\instagov-prototype\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|h:\\github\\instagov-prototype\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|H:\\Github\\instagov-prototype\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -13,6 +25,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|H:\\Github\\instagov-prototype\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|H:\\Github\\instagov-prototype\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|H:\\Github\\instagov-prototype\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 180,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,32 +55,95 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Bill.cs",
+              "DocumentMoniker": "H:\\Github\\instagov-prototype\\Bill.cs",
+              "RelativeDocumentMoniker": "Bill.cs",
+              "ToolTip": "H:\\Github\\instagov-prototype\\Bill.cs",
+              "RelativeToolTip": "Bill.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T17:59:23.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form3.cs",
+              "DocumentMoniker": "H:\\Github\\instagov-prototype\\Form3.cs",
+              "RelativeDocumentMoniker": "Form3.cs",
+              "ToolTip": "H:\\Github\\instagov-prototype\\Form3.cs",
+              "RelativeToolTip": "Form3.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAwBQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T20:12:43.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form3.cs [Design]",
+              "DocumentMoniker": "H:\\Github\\instagov-prototype\\Form3.cs",
+              "RelativeDocumentMoniker": "Form3.cs",
+              "ToolTip": "H:\\Github\\instagov-prototype\\Form3.cs [Design]",
+              "RelativeToolTip": "Form3.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T20:11:46.59Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "H:\\Github\\instagov-prototype\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "H:\\Github\\instagov-prototype\\Form2.cs",
+              "RelativeToolTip": "Form2.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T18:33:50.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "H:\\Github\\instagov-prototype\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "H:\\Github\\instagov-prototype\\Form2.cs [Design]",
+              "RelativeToolTip": "Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T18:33:33.602Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "H:\\Github\\instagov-prototype\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "H:\\Github\\instagov-prototype\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAAADcAAAACAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwDcAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T06:24:17.348Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Form1.cs",
               "DocumentMoniker": "H:\\Github\\instagov-prototype\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "H:\\Github\\instagov-prototype\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAuwEAAAAAxAAAA",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAEwKEAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T05:54:17.802Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "H:\\Github\\instagov-prototype\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
