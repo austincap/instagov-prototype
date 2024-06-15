@@ -17,6 +17,8 @@ using MongoDB.Bson.IO;
 using Newtonsoft.Json;
 using System.Runtime.Serialization;
 using ThirdParty.Json.LitJson;
+using System.IO;
+using Newtonsoft.Json.Linq;
 
 
 
@@ -33,6 +35,7 @@ namespace instagov_prototype
         {
             InitializeComponent();
             var unixTimestamp = (int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
+            Debug.WriteLine(unixTimestamp.ToString());
             var findOptions = new FindOptions { BatchSize = 3 };
             using (var cursor = TxCollectionSingleton.collectioninstance.Find(new BsonDocument("deadline", new BsonDocument("$lt", unixTimestamp))).ToCursor())
             {
@@ -44,9 +47,17 @@ namespace instagov_prototype
                     var settings = new JsonWriterSettings { Indent = true };
                     var jsonOutput = elem.ToJson(settings);
                     Console.WriteLine(jsonOutput);
-                    Bill result = Newtonsoft.Json.JsonConvert.DeserializeObject<Bill>(jsonOutput);
-                    Debug.WriteLine(result.title);
-                    var listViewItem = new ListViewItem(new string[] { "test"} );
+                    Bill p = new Bill();
+
+
+                    //JsonSerializer serializer = new JsonSerializer();
+                    //Bill p = (Bill)serializer.Deserialize(new JTokenReader(jsonOutput), typeof(Bill));
+
+
+                    //Bill reader = new JsonTextReader<Bill>(new StringReader(jsonOutput));
+                    //Bill result = JsonSerializer.Deserialize<Bill>(reader);
+                    Debug.WriteLine(elem["title"].AsString);
+                    var listViewItem = new ListViewItem(new string[] { elem["db_id"].AsString, elem["title"].AsString, elem["legal_type"].AsString, elem["desc"].AsString, Convert.ToString(elem["deadline"].AsInt32)} );
                     listView1.Items.Add(listViewItem);
                 }
             }

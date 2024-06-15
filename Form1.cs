@@ -26,6 +26,7 @@ namespace instagov_prototype
         public Form1()
         {
             InitializeComponent();
+            dateTimePicker1.Value = DateTime.Today;
         }
         //"66677dddbac414c38f9faef8",
         private void button1_Click(object sender, EventArgs e)
@@ -35,7 +36,7 @@ namespace instagov_prototype
 
             Debug.WriteLine(validObjId_targ);
             //if targetID is not used
-            if (validObjId_targ != "")
+            if (validObjId_targ == "")
             {
                 if (ObjectId.TryParse(validObjId_orig, out _) && ObjectId.TryParse(validObjId_targ, out _))
                 {
@@ -62,7 +63,7 @@ namespace instagov_prototype
                         amount = this.numericUpDown1.Value,
                         title = this.textBox1.Text,
                         desc = this.richTextBox1.Text,
-                        deadline = this.dateTimePicker1.Value.Millisecond
+                        deadline = (int)DateTime.UtcNow.Subtract(this.dateTimePicker1.Value.ToUniversalTime()).TotalSeconds
                     });
                     var document = BsonSerializer.Deserialize<BsonDocument>(text);
                     TxCollectionSingleton.collectioninstance.InsertOne(document);
@@ -89,9 +90,6 @@ namespace instagov_prototype
             {
                 case "CITIZEN":
                     this.citizenComboBox.Visible = true;
-                    break;
-                case "DEFINITION":
-                    this.definitionComboBox.Visible = true;
                     break;
                 case "BILL":
                     this.billComboBox.Visible = true;
