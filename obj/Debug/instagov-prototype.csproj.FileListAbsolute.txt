@@ -41,3 +41,12 @@ H:\Github\instagov-prototype\bin\Debug\SequentialGuid.dll
 H:\Github\instagov-prototype\obj\Debug\instagov_prototype.Form1.resources
 H:\Github\instagov-prototype\obj\Debug\instagov_prototype.Form2.resources
 H:\Github\instagov-prototype\obj\Debug\instagov_prototype.Form3.resources
+H:\Github\instagov-prototype\bin\Debug\NBitcoin.dll
+H:\Github\instagov-prototype\bin\Debug\Driver.NET.DeviceIoControl.dll
+H:\Github\instagov-prototype\bin\Debug\HardwareIds.NET.dll
+H:\Github\instagov-prototype\bin\Debug\ManagedNativeWifi.dll
+H:\Github\instagov-prototype\bin\Debug\System.CodeDom.dll
+H:\Github\instagov-prototype\bin\Debug\System.Text.Encodings.Web.dll
+H:\Github\instagov-prototype\bin\Debug\System.Text.Json.dll
+H:\Github\instagov-prototype\bin\Debug\System.ValueTuple.dll
+H:\Github\instagov-prototype\bin\Debug\WindowsMonitor.Standard.dll

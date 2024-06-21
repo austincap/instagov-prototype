@@ -8,6 +8,8 @@ using System.Windows.Forms;
 using MongoDB.Driver;
 using MongoDB.Bson;
 using System.Collections;
+using MongoDB.Bson.Serialization;
+using SequentialGuid;
 
 namespace instagov_prototype
 {
@@ -39,6 +41,9 @@ namespace instagov_prototype
         }
 
         public static MongoDB.Driver.IMongoCollection<BsonDocument> collectioninstance = new MongoClient("mongodb+srv://austin:fucksluts@instagov.uludw0r.mongodb.net/").GetDatabase("maindb").GetCollection<BsonDocument>("transactions");
+    
+    
+
     }
 
 
@@ -64,11 +69,11 @@ namespace instagov_prototype
             //}
             //var client = new MongoClient(connectionString);
             //var collection = client.GetDatabase("maindb").GetCollection<BsonDocument>("transactions");
-            var filter = Builders<BsonDocument>.Filter.Eq("title", "austin");
+            //var filter = Builders<BsonDocument>.Filter.Eq("title", "austin");
 
-            var document = TxCollectionSingleton.collectioninstance.Find(filter).First();
+            //var document = TxCollectionSingleton.collectioninstance.Find(filter).First();
 
-            Console.WriteLine(document);
+            //Console.WriteLine(document);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.lawView = new System.Windows.Forms.ListView();
+            this.refreshPage = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lawView
@@ -40,11 +41,22 @@
             this.lawView.TabIndex = 0;
             this.lawView.UseCompatibleStateImageBehavior = false;
             // 
+            // refreshPage
+            // 
+            this.refreshPage.Location = new System.Drawing.Point(259, 372);
+            this.refreshPage.Name = "refreshPage";
+            this.refreshPage.Size = new System.Drawing.Size(75, 23);
+            this.refreshPage.TabIndex = 1;
+            this.refreshPage.Text = "refresh page";
+            this.refreshPage.UseVisualStyleBackColor = true;
+            this.refreshPage.Click += new System.EventHandler(this.refreshPage_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.refreshPage);
             this.Controls.Add(this.lawView);
             this.Name = "Form3";
             this.Text = "Form3";
@@ -55,5 +67,6 @@
         #endregion
 
         private System.Windows.Forms.ListView lawView;
+        private System.Windows.Forms.Button refreshPage;
     }
 }

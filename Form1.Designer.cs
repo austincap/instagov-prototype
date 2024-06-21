@@ -35,19 +35,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.billComboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.descinput = new System.Windows.Forms.RichTextBox();
+            this.titleinput = new System.Windows.Forms.TextBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.origId = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.targId = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.status = new System.Windows.Forms.Label();
             this.citizenComboBox = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.voteby = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.definitionComboBox = new System.Windows.Forms.ComboBox();
             this.assetComboBox = new System.Windows.Forms.ComboBox();
@@ -64,6 +64,10 @@
             this.genesisInputLabel = new System.Windows.Forms.Label();
             this.genesisThresholdValue = new System.Windows.Forms.NumericUpDown();
             this.genesisThresholdLabel = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.syncStatus = new System.Windows.Forms.Label();
+            this.createGenesisChain = new System.Windows.Forms.Button();
+            this.createNewBlock = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.genesisThresholdValue)).BeginInit();
             this.SuspendLayout();
@@ -150,20 +154,20 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "legal type";
             // 
-            // richTextBox1
+            // descinput
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(476, 233);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(285, 117);
-            this.richTextBox1.TabIndex = 8;
-            this.richTextBox1.Text = "";
+            this.descinput.Location = new System.Drawing.Point(476, 233);
+            this.descinput.Name = "descinput";
+            this.descinput.Size = new System.Drawing.Size(285, 117);
+            this.descinput.TabIndex = 8;
+            this.descinput.Text = "";
             // 
-            // textBox1
+            // titleinput
             // 
-            this.textBox1.Location = new System.Drawing.Point(476, 190);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(285, 20);
-            this.textBox1.TabIndex = 1;
+            this.titleinput.Location = new System.Drawing.Point(476, 190);
+            this.titleinput.Name = "titleinput";
+            this.titleinput.Size = new System.Drawing.Size(285, 20);
+            this.titleinput.TabIndex = 1;
             // 
             // numericUpDown1
             // 
@@ -199,12 +203,12 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "description";
             // 
-            // textBox2
+            // origId
             // 
-            this.textBox2.Location = new System.Drawing.Point(160, 190);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(156, 20);
-            this.textBox2.TabIndex = 13;
+            this.origId.Location = new System.Drawing.Point(160, 190);
+            this.origId.Name = "origId";
+            this.origId.Size = new System.Drawing.Size(156, 20);
+            this.origId.TabIndex = 13;
             // 
             // label7
             // 
@@ -215,12 +219,12 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "originator ID";
             // 
-            // textBox3
+            // targId
             // 
-            this.textBox3.Location = new System.Drawing.Point(160, 233);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(156, 20);
-            this.textBox3.TabIndex = 15;
+            this.targId.Location = new System.Drawing.Point(160, 233);
+            this.targId.Name = "targId";
+            this.targId.Size = new System.Drawing.Size(156, 20);
+            this.targId.TabIndex = 15;
             // 
             // label8
             // 
@@ -255,14 +259,14 @@
             this.citizenComboBox.Visible = false;
             this.citizenComboBox.SelectedIndexChanged += new System.EventHandler(this.citizenComboBox_SelectedIndexChanged);
             // 
-            // dateTimePicker1
+            // voteby
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(116, 277);
-            this.dateTimePicker1.MinDate = new System.DateTime(2024, 6, 10, 20, 17, 54, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 20;
-            this.dateTimePicker1.Value = new System.DateTime(2024, 6, 10, 20, 17, 54, 0);
+            this.voteby.Location = new System.Drawing.Point(116, 277);
+            this.voteby.MinDate = new System.DateTime(2024, 6, 10, 20, 17, 54, 0);
+            this.voteby.Name = "voteby";
+            this.voteby.Size = new System.Drawing.Size(200, 20);
+            this.voteby.TabIndex = 20;
+            this.voteby.Value = new System.DateTime(2024, 6, 10, 20, 17, 54, 0);
             // 
             // label10
             // 
@@ -442,11 +446,54 @@
     "HANGE)";
             this.genesisThresholdLabel.Visible = false;
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(713, 74);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 38;
+            this.button6.Text = "sync blocks";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // syncStatus
+            // 
+            this.syncStatus.AutoSize = true;
+            this.syncStatus.Location = new System.Drawing.Point(713, 104);
+            this.syncStatus.Name = "syncStatus";
+            this.syncStatus.Size = new System.Drawing.Size(76, 13);
+            this.syncStatus.TabIndex = 39;
+            this.syncStatus.Text = "not connected";
+            // 
+            // createGenesisChain
+            // 
+            this.createGenesisChain.Location = new System.Drawing.Point(23, 171);
+            this.createGenesisChain.Name = "createGenesisChain";
+            this.createGenesisChain.Size = new System.Drawing.Size(100, 29);
+            this.createGenesisChain.TabIndex = 40;
+            this.createGenesisChain.Text = "create new chain";
+            this.createGenesisChain.UseVisualStyleBackColor = true;
+            this.createGenesisChain.Visible = false;
+            this.createGenesisChain.Click += new System.EventHandler(this.createGenesisChain_Click);
+            // 
+            // createNewBlock
+            // 
+            this.createNewBlock.Location = new System.Drawing.Point(692, 120);
+            this.createNewBlock.Name = "createNewBlock";
+            this.createNewBlock.Size = new System.Drawing.Size(97, 51);
+            this.createNewBlock.TabIndex = 41;
+            this.createNewBlock.Text = "create new block from pending transactions";
+            this.createNewBlock.UseVisualStyleBackColor = true;
+            this.createNewBlock.Click += new System.EventHandler(this.createNewBlock_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.createNewBlock);
+            this.Controls.Add(this.createGenesisChain);
+            this.Controls.Add(this.syncStatus);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.genesisThresholdLabel);
             this.Controls.Add(this.genesisThresholdValue);
             this.Controls.Add(this.genesisInputLabel);
@@ -463,25 +510,25 @@
             this.Controls.Add(this.assetComboBox);
             this.Controls.Add(this.definitionComboBox);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.voteby);
             this.Controls.Add(this.citizenComboBox);
             this.Controls.Add(this.status);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.targId);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.origId);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.descinput);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.billComboBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.titleinput);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -495,25 +542,23 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox billComboBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RichTextBox descinput;
+        private System.Windows.Forms.TextBox titleinput;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox targId;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label status;
         private System.Windows.Forms.ComboBox citizenComboBox;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker voteby;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox definitionComboBox;
         private System.Windows.Forms.ComboBox assetComboBox;
@@ -530,6 +575,12 @@
         private System.Windows.Forms.Label genesisInputLabel;
         private System.Windows.Forms.NumericUpDown genesisThresholdValue;
         private System.Windows.Forms.Label genesisThresholdLabel;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label syncStatus;
+        private System.Windows.Forms.Button createGenesisChain;
+        private System.Windows.Forms.Button createNewBlock;
+        public System.Windows.Forms.TextBox origId;
+        public System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

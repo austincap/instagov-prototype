@@ -34,6 +34,7 @@
             this.type = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.desc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.voteby = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.refreshPage = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView1
@@ -47,7 +48,7 @@
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(166, 39);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(288, 286);
+            this.listView1.Size = new System.Drawing.Size(457, 286);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -75,11 +76,22 @@
             this.voteby.DisplayIndex = 3;
             this.voteby.Text = "voteby";
             // 
+            // refreshPage
+            // 
+            this.refreshPage.Location = new System.Drawing.Point(252, 351);
+            this.refreshPage.Name = "refreshPage";
+            this.refreshPage.Size = new System.Drawing.Size(75, 23);
+            this.refreshPage.TabIndex = 1;
+            this.refreshPage.Text = "refresh page";
+            this.refreshPage.UseVisualStyleBackColor = true;
+            this.refreshPage.Click += new System.EventHandler(this.refreshPage_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.refreshPage);
             this.Controls.Add(this.listView1);
             this.Name = "Form2";
             this.Text = "Form2";
@@ -95,5 +107,6 @@
         private System.Windows.Forms.ColumnHeader type;
         private System.Windows.Forms.ColumnHeader desc;
         private System.Windows.Forms.ColumnHeader voteby;
+        private System.Windows.Forms.Button refreshPage;
     }
 }
