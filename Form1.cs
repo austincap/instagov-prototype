@@ -8,6 +8,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Net;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
@@ -18,6 +19,9 @@ using System.IO;
 using MongoDB.Bson.Serialization.IdGenerators;
 using NBitcoin;
 using System.Security.Cryptography;
+using SimpleNetwork;
+//using Grpc.Core;
+using WindowsMonitor.Hardware.Storage.SMHBA;
 
 namespace instagov_prototype
 {
@@ -53,45 +57,7 @@ namespace instagov_prototype
             Debug.WriteLine(validObjId_targ);
             makeTransaction((string)this.comboBox1.SelectedItem, (string)this.comboBox2.SelectedItem, this.subtypeMetaSelector.Text, this.origId.Text, this.targId.Text, (double)this.numericUpDown1.Value, this.titleinput.Text, this.descinput.Text, (uint)this.voteby.Value.ToUniversalTime().Ticks, this.currentBlockNumber);
 
-            //if targetID is not used
-            //if (validObjId_targ == "")
-            //{
-            //    if (ObjectId.TryParse(validObjId_orig, out _) && ObjectId.TryParse(validObjId_targ, out _))
-            //    {
-
-            //        this.status.Text = "Valid IDs";
-            //    }
-            //    else
-            //    {
-            //        this.status.Text = "Invalid IDs";
-            //    }
-                
-            //    try
-            //    {
-            //        string text = Newtonsoft.Json.JsonConvert.SerializeObject(new
-            //        {
-            //            legal_action = this.comboBox1.SelectedItem, 
-            //            legal_object = this.comboBox2.SelectedItem,
-            //            legal_type = this.subtypeMetaSelector.Text,
-            //            originator_id = this.origId.Text,
-            //            target_id = validObjId_targ,
-            //            db_id = SequentialGuidGenerator.Instance.NewGuid(),
-            //            output_id = "needs to be same format but unique, mostly for new wallet outputs",
-            //            amount = this.numericUpDown1.Value,
-            //            title = this.titleinput.Text,
-            //            desc = this.descinput.Text,
-            //            deadline = this.voteby.Value.ToUniversalTime(),
-            //            currentblocknumber = this.currentBlockNumber
-            //        });
-            //        var document = BsonSerializer.Deserialize<BsonDocument>(text);
-            //        TxCollectionSingleton.collectioninstance.InsertOne(document);
-            //        this.status.Text = "Sucessful transaction!";
-            //    }
-            //    catch
-            //    {
-            //        this.status.Text = "Transaction failed";
-            //    }
-            //}
+          
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -286,6 +252,29 @@ namespace instagov_prototype
                 }
             }
         }
+
+        private async void start_server_Click(object sender, EventArgs e)
+        {
+            //have to use async
+            //await inside async func
+            //server needs to connect to different clients
+            //clients need to connect to different servers
+            //maybe make multiple clients?
+            Server s = new Server(IPAddress.Loopback, 5454, 1);
+            s.StartServer();
+
+
+            Client c = new Client();
+            await c.ConnectAsync(IPAddress.Loopback, 5454);
+            //string fromserver = c.WaitForPullObject<string>();
+
+            await s.SendToAllAsync<string>("FUCK");
+
+            var x = await c.PullObjectAsync<string>();
+            Debug.WriteLine(x);
+
+
+        }
     }
 
     public interface IIdGenerator
@@ -296,4 +285,51 @@ namespace instagov_prototype
     {
         public Guid NewId() => SequentialGuidGenerator.Instance.NewGuid();
     }
+
+
+
+    public class Peer
+    {
+        public Peer(string IPaddress, string name)
+        {
+            IP = IPAddress.Parse(IPaddress);
+            Name = name;
+        }
+
+        public Peer(IPAddress IPaddress, string name)
+        {
+            IP = IPaddress;
+            Name = name;
+        }
+
+        public IPAddress IP { get; set; }
+        public string Name { get; set; }
+
+
+        private Peer _me = null;
+        public string GetMyIP()
+        {
+            var hostname = Dns.GetHostName();
+            var address = Dns.GetHostByName(hostname).AddressList[0].MapToIPv4().ToString();
+            return address;
+        }
+
+        public string GetMyName()
+        {
+            return Environment.MachineName;
+        }
+
+        public Peer WhoAmI()
+        {
+            if (_me != null)
+            {
+                return _me;
+            }
+
+            _me = new Peer(GetMyIP(), GetMyName());
+            return _me;
+        }
+    }
+
+
 }

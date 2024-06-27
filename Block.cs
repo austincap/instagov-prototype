@@ -35,7 +35,7 @@ namespace instagov_prototype
         public uint number_of_tx_in_block { get; set; }
         public uint this_block_difficulty { get; set; }
         public uint nonce { get; set; }
-
+       
 
         public string GenHash(string data)
         {

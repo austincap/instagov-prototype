@@ -68,6 +68,7 @@
             this.syncStatus = new System.Windows.Forms.Label();
             this.createGenesisChain = new System.Windows.Forms.Button();
             this.createNewBlock = new System.Windows.Forms.Button();
+            this.start_server = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.genesisThresholdValue)).BeginInit();
             this.SuspendLayout();
@@ -485,11 +486,22 @@
             this.createNewBlock.UseVisualStyleBackColor = true;
             this.createNewBlock.Click += new System.EventHandler(this.createNewBlock_Click);
             // 
+            // start_server
+            // 
+            this.start_server.Location = new System.Drawing.Point(186, 393);
+            this.start_server.Name = "start_server";
+            this.start_server.Size = new System.Drawing.Size(75, 23);
+            this.start_server.TabIndex = 42;
+            this.start_server.Text = "start server";
+            this.start_server.UseVisualStyleBackColor = true;
+            this.start_server.Click += new System.EventHandler(this.start_server_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.start_server);
             this.Controls.Add(this.createNewBlock);
             this.Controls.Add(this.createGenesisChain);
             this.Controls.Add(this.syncStatus);
@@ -581,6 +593,7 @@
         private System.Windows.Forms.Button createNewBlock;
         public System.Windows.Forms.TextBox origId;
         public System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button start_server;
     }
 }
 

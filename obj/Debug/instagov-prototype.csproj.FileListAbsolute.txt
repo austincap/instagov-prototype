@@ -50,3 +50,10 @@ H:\Github\instagov-prototype\bin\Debug\System.Text.Encodings.Web.dll
 H:\Github\instagov-prototype\bin\Debug\System.Text.Json.dll
 H:\Github\instagov-prototype\bin\Debug\System.ValueTuple.dll
 H:\Github\instagov-prototype\bin\Debug\WindowsMonitor.Standard.dll
+H:\Github\instagov-prototype\bin\Debug\ConsoleTables.dll
+H:\Github\instagov-prototype\bin\Debug\ConsoleTables.pdb
+H:\Github\instagov-prototype\bin\Debug\SimpleNetwork.dll
+H:\Github\instagov-prototype\bin\Debug\MessagePack.dll
+H:\Github\instagov-prototype\bin\Debug\MessagePack.Annotations.dll
+H:\Github\instagov-prototype\bin\Debug\Network.dll
+H:\Github\instagov-prototype\bin\Debug\System.Collections.Immutable.dll

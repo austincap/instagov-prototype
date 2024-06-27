@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[1.1.9, )"
             },
+            "KaiNet.SimpleNetwork": {
+              "target": "Package",
+              "version": "[1.2.2, )"
+            },
             "MongoDB.Bson": {
               "target": "Package",
               "version": "[2.25.0, )"
@@ -60,6 +64,10 @@
               "target": "Package",
               "version": "[7.0.37, )"
             },
+            "Network": {
+              "target": "Package",
+              "version": "[6.2.5.23, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -71,6 +79,10 @@
             "SequentialGuid": {
               "target": "Package",
               "version": "[4.0.5, )"
+            },
+            "SimpleNetwork": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             }
           }
         }

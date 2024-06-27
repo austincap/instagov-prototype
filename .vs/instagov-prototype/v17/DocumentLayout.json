@@ -7,24 +7,43 @@
       "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|H:\\Github\\instagov-prototype\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|H:\\Github\\instagov-prototype\\genesiskernel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:genesiskernel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|H:\\Github\\instagov-prototype\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Austin\\AppData\\Local\\Temp\\.vsdbgsrc\\a6c630ab471a9a09b991c774ab97212a203515f0387a704f9e098754c37a5aa4\\Socket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|H:\\Github\\instagov-prototype\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|h:\\github\\instagov-prototype\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|h:\\github\\instagov-prototype\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|H:\\Github\\instagov-prototype\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|H:\\Github\\instagov-prototype\\transactionpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:transactionpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|H:\\Github\\instagov-prototype\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|H:\\Github\\instagov-prototype\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|H:\\Github\\instagov-prototype\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|H:\\Github\\instagov-prototype\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|H:\\Github\\instagov-prototype\\genesiskernel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:genesiskernel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|H:\\Github\\instagov-prototype\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -33,14 +52,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|H:\\Github\\instagov-prototype\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|H:\\Github\\instagov-prototype\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|H:\\Github\\instagov-prototype\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{234B7927-4F17-41F3-BD37-951053C0EF26}|instagov-prototype.csproj|solutionrelative:form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +61,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 180,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,7 +73,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "Socket.cs",
+              "DocumentMoniker": "C:\\Users\\Austin\\AppData\\Local\\Temp\\.vsdbgsrc\\a6c630ab471a9a09b991c774ab97212a203515f0387a704f9e098754c37a5aa4\\Socket.cs",
+              "ToolTip": "C:\\Users\\Austin\\AppData\\Local\\Temp\\.vsdbgsrc\\a6c630ab471a9a09b991c774ab97212a203515f0387a704f9e098754c37a5aa4\\Socket.cs [Read Only]",
+              "ViewState": "AQIAAEQEAAAAAAAAAAAiwFsEAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T23:52:14.787Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.config",
+              "DocumentMoniker": "H:\\Github\\instagov-prototype\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "H:\\Github\\instagov-prototype\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-27T22:04:08.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TransactionPool.cs",
+              "DocumentMoniker": "H:\\Github\\instagov-prototype\\TransactionPool.cs",
+              "RelativeDocumentMoniker": "TransactionPool.cs",
+              "ToolTip": "H:\\Github\\instagov-prototype\\TransactionPool.cs",
+              "RelativeToolTip": "TransactionPool.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T22:58:31.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "GenesisKernel.cs",
               "DocumentMoniker": "H:\\Github\\instagov-prototype\\GenesisKernel.cs",
               "RelativeDocumentMoniker": "GenesisKernel.cs",
@@ -75,20 +123,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Block.cs",
               "DocumentMoniker": "H:\\Github\\instagov-prototype\\Block.cs",
               "RelativeDocumentMoniker": "Block.cs",
               "ToolTip": "H:\\Github\\instagov-prototype\\Block.cs",
               "RelativeToolTip": "Block.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAmwC4AAAAWAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAQwCUAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-20T11:19:27.277Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Bill.cs",
               "DocumentMoniker": "H:\\Github\\instagov-prototype\\Bill.cs",
               "RelativeDocumentMoniker": "Bill.cs",
@@ -101,20 +149,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "Form3.cs",
               "DocumentMoniker": "H:\\Github\\instagov-prototype\\Form3.cs",
               "RelativeDocumentMoniker": "Form3.cs",
               "ToolTip": "H:\\Github\\instagov-prototype\\Form3.cs",
               "RelativeToolTip": "Form3.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAawBYAAAAAAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAawBYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T20:12:43.486Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "Form3.cs [Design]",
               "DocumentMoniker": "H:\\Github\\instagov-prototype\\Form3.cs",
               "RelativeDocumentMoniker": "Form3.cs",
@@ -126,20 +174,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Form2.cs",
               "DocumentMoniker": "H:\\Github\\instagov-prototype\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
               "ToolTip": "H:\\Github\\instagov-prototype\\Form2.cs",
               "RelativeToolTip": "Form2.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAD4vy8AAAAAAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAtwC8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T18:33:50.299Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "H:\\Github\\instagov-prototype\\Form2.cs",
               "RelativeDocumentMoniker": "Form2.cs",
@@ -151,13 +199,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "H:\\Github\\instagov-prototype\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "H:\\Github\\instagov-prototype\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAWwEcAAAAOAAAA",
+              "ViewState": "AQIAADUAAAAAAAAAAAAwwCwAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T06:24:17.348Z",
               "EditorCaption": ""
@@ -170,7 +218,7 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "H:\\Github\\instagov-prototype\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAPkAAAAAAAAAAAAtwBgBAAApAAAA",
+              "ViewState": "AQIAAJ4AAAAAAAAAAAAEwAUBAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T05:54:17.802Z",
               "EditorCaption": ""
